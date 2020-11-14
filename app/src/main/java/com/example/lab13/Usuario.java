@@ -1,13 +1,16 @@
 package com.example.lab13;
 
 public class Usuario {
-    private String nombre,numero,id;
+    private String nombre,id;
 
-    public Usuario(String nombre,String numero,String id){
+    public Usuario(){
+
+    }
+    public Usuario(String id,String nombre){
         this.nombre=nombre;
-        this.numero=numero;
         this.id=id;
     }
+
 
 
     public String getNombre() {
@@ -16,14 +19,6 @@ public class Usuario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
     }
 
     public String getId() {
